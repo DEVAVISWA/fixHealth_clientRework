@@ -36,7 +36,7 @@ function Signup() {
     try {
       dispatch(showBackDrop());
       const response = await axios.post(
-        "http://127.0.0.1:3000/api/user/signup",
+        "https://fixhealth-serverrework.onrender.com/signup",
         signupBody
       );
       if (!response.data.error) {

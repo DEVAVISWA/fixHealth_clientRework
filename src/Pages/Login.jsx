@@ -23,7 +23,7 @@ function Login() {
     try {
       dispatch(showBackDrop());
       const response = await axios.post(
-        "https://fixhealth-serverrework.onrender.com/login",
+        "https://fixhealth-serverrework.onrender.com/api/user/login",
         loginBody
       );
       if (!response.data.error) {
